@@ -19,15 +19,89 @@
   display: block;
 }
 
+.columns-container .columns > div > div:nth-child(1) {
+  width: 100%;
+  flex:2;
+}
+
+.columns-container .columns > div h2 {
+  text-align: center;
+  width: 100%;
+  letter-spacing: 5px;
+  font-size: 55px;
+  font-weight: 100;
+}
+
+.columns-container .columns > div h3 {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 43px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.columns-container .columns > div p {
+  text-align: center;
+}
+
+.columns-container .columns > div a {
+  background-color: transparent;
+  text-decoration: underline;
+  color: rgba(19 19 19 / 75%);
+  margin: 10px;
+}
+
+.shop-summer-bg .columns-wrapper .columns > div > div:nth-child(2){
+  background-color: rgb(27, 37, 44);
+  color: white;
+  letter-spacing: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  max-width: 300px;
+  padding: 20px;
+  width: auto;
+  height:500px;
+}
+
+.shop-summer-bg .columns-wrapper .columns > div > div:nth-child(2) p a{
+  color: white;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 24px;
+    /* gap: 24px; */
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+}
+
+@media (width <=600px){
+  .columns-container .columns > div h2 {
+    font-size: 30px;
+  }
+
+  .shop-summer-bg .columns-wrapper .columns > div > div:nth-child(2){
+    height: 300px;
+  }
+
+  .columns-container .columns > div h3 {
+    font-size: 23px;
+  }
+
+  .columns-container .columns > div p {
+    font-size: 14px;
+  }
+}
+
+@media(min-width:768px){
+  .shop-summer-bg .columns-wrapper .columns > div > div:nth-child(2) {
+    max-width: 100%;
   }
 }
