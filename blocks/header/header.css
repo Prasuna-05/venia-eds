@@ -266,3 +266,76 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+.nav-tools div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.nav-tools div p {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  margin: 0;
+  width:max-content;
+}
+
+.cart-block > div > p:nth-child(3) > a{
+  background: none;
+}
+
+@media (width < 600px) {
+  .nav-tools div {
+    display: flex;
+    gap: 0rem;
+}
+
+header nav .nav-brand img {
+  width: 70px;
+  height: auto;
+}
+.nav-tools div p {
+  font-size: 10px;
+}
+header nav {
+  gap: 0 10px;
+}
+}
+
+@media( min-width : 1024px){
+  .nav-tools div {
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 1rem;
+}
+
+header nav .nav-brand img {
+  width: 90px;
+  height: auto;
+}
+
+}
+
+@media( min-width : 900px) and (max-width : 1023px){
+  .nav-tools div {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0rem;
+      font-size: 12px;
+  }
+  header nav .nav-brand img {
+    width: 90px;
+    height: auto;
+  }
+  .nav-tools div p {
+    width: max-content;
+  }
+  @media (width >= 900px) {
+    header nav .nav-sections ul {
+        display: flex;
+        gap: 18px;
+        margin: 0;
+    }
+  }
+}
